@@ -1,0 +1,28 @@
+[project]
+name = "llm-clap"
+version = "0.1"
+description = "Generate embeddings for audio files using CLAP with llm"
+readme = "README.md"
+authors = [{name = "Evangelos Lamprou"}]
+license = {text = "Apache-2.0"}
+classifiers = [
+    "License :: OSI Approved :: Apache Software License"
+]
+dependencies = [
+    "llm>=0.10",
+    "transformers",
+    "torch",
+    "torchaudio",
+    "librosa"
+]
+
+[project.urls]
+Homepage = "https://github.com/vagos/llm-clap"
+Changelog = "https://github.com/vagos/llm-clap/releases"
+Issues = "https://github.com/vagos/llm-clap/issues"
+
+[project.entry-points.llm]
+clap = "llm_clap"
+
+[project.optional-dependencies]
+test = ["pytest"]
