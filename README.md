@@ -12,11 +12,11 @@ llm install llm-clap
 Once you have installed an embedding model you can use it to embed text like this:
 
 ```bash
-llm embed -m clip -c 'Hello world'
+llm embed -m clap -c 'Hello world'
 ```
 Or an audio file like this:
 ```bash
-llm embed -m clip --binary -i AUDIO_1431.wav
+llm embed -m clap --binary -i AUDIO_1431.wav
 ```
 
 Embeddings are more useful if you store them in a database - see [the LLM documentation](https://llm.datasette.io/en/stable/embeddings/cli.html#storing-embeddings-in-sqlite) for details.
