@@ -30,3 +30,8 @@ You can then search for songs of specific things like this:
 ```bash
 llm similar songs -c 'rap'
 ```
+
+But you can also find songs/audio similar to a given audio file like this:
+```bash
+llm similar songs --binary -i MYSONG.wav
+```
