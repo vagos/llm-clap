@@ -1,6 +1,6 @@
 [project]
 name = "llm-clap"
-version = "0.1"
+version = "0.2"
 description = "Generate embeddings for audio files using CLAP with llm"
 readme = "README.md"
 authors = [{name = "Evangelos Lamprou"}]

@@ -42,6 +42,4 @@ class ClapEmbeddingModel(llm.EmbeddingModel):
             else:
                 raise ValueError(f"Cannot embed item of type: {type(item)}")
 
-            embeddings.append(embedding)
-
-        return [[float(num) for num in embedding.flatten()] for embedding in embeddings]
+            yield [float(num) for num in embedding.flatten()]
