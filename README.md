@@ -1,3 +1,5 @@
+# llm-clap
+
 [LLM](https://llm.datasette.io/) plugin for embedding audio files (music, speech, sounds) and text using [CLAP](https://huggingface.co/docs/transformers/main/en/model_doc/clap)
 
 ## Installation
