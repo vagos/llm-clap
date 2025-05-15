@@ -19,7 +19,7 @@ class ClapEmbeddingModel(llm.EmbeddingModel):
         self._model = None
 
     def embed_batch(self, items):
-        # Embeds a mix of text strings and binary images
+        # Embeds a mix of text strings and audio data
         if self._model is None:
             self._model = ClapModel.from_pretrained(self.model_name)
 
